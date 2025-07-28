@@ -15,27 +15,77 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
 	<style>
-     body {
-       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-       font-size : 1.5em
-     }
-     .nametitle {
-         text-align : left ;
-      }
-       @media screen and (max-width: 48em) {
-         .nametitle {
-         text-align: center;
-         }
-       }
-       ul {
-        list-style-type: none;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1.2em;
         }
-        li {
-            padding-bottom: 8px;
+        .nametitle {
+            text-align: left;
+        }
+        @media screen and (max-width: 768px) {
+            .nametitle {
+                text-align: center;
+            }
+            .latest-news {
+                text-align: center;
+            }
+        }
+        .latest-news {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        .latest-news h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        .profile-img {
+            border-radius: 50%;
+            max-width: 150px;
+        }
+        .content-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
+	
+	<!--
+	<style>
+		 body {
+		   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+		   font-size : 1.5em
+		 }
+		 .nametitle {
+			 text-align : left ;
+		  }
+		   @media screen and (max-width: 48em) {
+			 .nametitle {
+			 text-align: center;
+			 }
+		   }
+		   ul {
+			list-style-type: none;
+			}
+			li {
+				padding-bottom: 8px;
+			}
+	</style>
+	-->
+    
     <!-- Latest compiled and minified JavaScript -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
@@ -70,6 +120,53 @@
             <h1><b>Abhijit Mishra</b></h1>
         </div>
         </div>
+		<style>
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+				font-size: 1.2em;
+			}
+			.nametitle {
+				text-align: left;
+			}
+			@media screen and (max-width: 768px) {
+				.nametitle {
+					text-align: center;
+				}
+				.latest-news {
+					text-align: center;
+				}
+			}
+			.latest-news {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				background: #f8f9fa;
+				padding: 10px;
+				border-radius: 8px;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+				max-width: 300px;
+			}
+			.latest-news h3 {
+				margin-top: 0;
+				font-size: 1.2em;
+			}
+			.container {
+				max-width: 1100px;
+				margin: auto;
+				padding: 20px;
+			}
+			.profile-img {
+				border-radius: 50%;
+				max-width: 150px;
+			}
+			.content-section {
+				margin-top: 20px;
+				padding: 15px;
+				background: #ffffff;
+				border-radius: 8px;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			}
+		</style>
         <div class="col-md-2 col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
         <img src="./fac2.jpg" class="img-responsive img-circle" alt="Abhijit Mishra&#39;s photo" title="Abhijit Mishra&#39;s photo" />
         </div>
@@ -121,13 +218,16 @@
 			</li>
 			<div class="page-header"></div>
 			<li>
+				<b>[C30]</b> Sravanthi, S. L., Maharaj, K., Gunnu, S., Mishra, A., & Bhattacharyya, P. 2025. <a href = "https://arxiv.org/pdf/2506.13559"> Understand the Implication: Learning to Think for Pragmatic Understanding. Findings of <b>ACL 2025</b>, Vienna, Austria, July 27-August 1, 2025
+			</li>
+			<li>
 				<b>[C29]</b> Abhijit Mishra, Richard Noh, Hsiang Fu, Mingda Li, Minji Kim. 2025. <a href = "https://arxiv.org/abs/2502.14780">ReVision: A Dataset and Baseline VLM for Privacy-Preserving Task-Oriented Visual Instruction Rewriting</a> <i>arXiv preprint arXiv:2502.14780</i>
 			</li>
 			<li>
-				<b>[C28]</b> Abhijit Mishra, Shreya Shukla, Jose Torres, Jacek Gwizdka, Shounak Roychowdhury. 2025. <a href = "https://arxiv.org/abs/2410.07507">Thought2Text: Text Generation from EEG Signal using Large Language Models (LLMs)</a>. <i>Findings of the North American Chapter of the Association for Computational Linguistics </i> <b>(NAACL 2025)</b>. New Mexico, USA. April 29–May 4, 2025. 
+				<b>[C28]</b> Abhijit Mishra, Shreya Shukla, Jose Torres, Jacek Gwizdka, Shounak Roychowdhury. 2025. <a href = "https://arxiv.org/abs/2410.07507">Thought2Text: Text Generation from EEG Signal using Large Language Models (LLMs)</a>. <i>Findings of the North American Chapter of the Association for Computational Linguistics </i> <b>(NAACL 2025)</b>. New Mexico, USA. April 29–May 4, 2025
 			</li>
 			<li>
-				<b>[C27]</b> Kishan Maharaj, Vitobha Munigala, Srikanth G. Tamilselvam, Prince Kumar, Sayandeep Sen, Palani Kodeswaran, Abhijit Mishra, Pushpak Bhattacharyya. 2025. <a href = "https://arxiv.org/abs/2410.14748"> ETF: An Entity Tracing Framework for Hallucination Detection in Code Summaries. </a> arXiv preprint arXiv:2410.14748
+				<b>[C27]</b> Kishan Maharaj, Vitobha Munigala, Srikanth G. Tamilselvam, Prince Kumar, Sayandeep Sen, Palani Kodeswaran, Abhijit Mishra, Pushpak Bhattacharyya. 2025. <a href = "https://arxiv.org/abs/2410.14748"> ETF: An Entity Tracing Framework for Hallucination Detection in Code Summaries. </a> <b>(ACL 2025) Main Conference</b>. Vienna, Austria, July 27-August 1, 2025
 			</li>
 			<li>
 				<b>[C26]</b> Mingda Li, Abhijit Mishra, Utkarsh Mujumdar. 2024. <a href="https://www.arxiv.org/abs/2408.09701"> Bridging the Language Gap: Enhancing Multilingual Prompt-Based Code Generation in LLMs via Zero-Shot Cross-Lingual Transfer</a>. <i>arXiv preprint arXiv:2408.09701</i>
@@ -279,17 +379,17 @@
         </div>
         <b>Senior Program Committee Member</b>
 		<ul>
-			<li>Association for the Advancement of Artificial Intelligence (AAAI 2025, AAAI 2024, AAAI 2022, AAAI 2021)</li>
+			<li>Association for the Advancement of Artificial Intelligence (AAAI 2026, AAAI 2025, AAAI 2024, AAAI 2022, AAAI 2021)</li>
 		</ul>
 		<b>Program Committee Member / Reviewer</b>
 		<ul>
-			<li>Association for Computational Linguistics (ACL 2023, ACL 2022, ACL 2021, ACL 2020, ACL 2019, ACL 2018 <i>[adjudged as outstanding reviewer]</i>, ACL 2017)</li>
+			<li>Association for Computational Linguistics (ACL 2025, ACL 2024, ACL 2023, ACL 2022, ACL 2021, ACL 2020, ACL 2019, ACL 2018) <i>[adjudged as outstanding reviewer]</i>, ACL 2017)</li>
 			<li>Transactions of the Association for Computational Linguistics (TACL 2023, TACL 2022, TACL 2020)</li>
 			<li>Association for the Advancement of Artificial Intelligence (AAAI 2023, AAAI 2022, AAAI 2020)</li>
 			<li>International Joint Conference on Artificial Intelligence (IJCAI 2022, IJCAI 2020)</li>
-			<li>Empirical Methods for Natural Language Processing (EMNLP 2023, EMNLP 2022, EMNLP 2021, EMNLP 2020 [Adjudged as outstanding  reviewer], EMNLP 2019, EMNLP 2018)</li>
+			<li>Empirical Methods for Natural Language Processing (EMNLP 2025, EMNLP 2024, EMNLP 2023, EMNLP 2022, EMNLP 2021, EMNLP 2020 [Adjudged as outstanding  reviewer], EMNLP 2019, EMNLP 2018)</li>
 			<li>Computational Linguistics Conference (COLING  2022, COLING  2020, COLING  2018)</li>
-			<li>North American chapter of Association for Computational Linguistics (NAACL 2022, NAACL 2016)</li>
+			<li>North American chapter of Association for Computational Linguistics (NAACL 2025, NAACL 2023, NAACL 2022, NAACL 2016)</li>
 			<li>European Chapter of Association for Computational Linguistics (EACL 2023, EACL 2021)</li>
 			<li>The Asia-Pacific Chapter of the Association for Computational Linguistics (AACL-IJCNLP 2023, AACL-IJCNLP 2023, AACL-IJCNLP 2022, AACL 2020,</li>
 			<li>ACM Computing Surveys (ACM-CSur, 2020)</li>
