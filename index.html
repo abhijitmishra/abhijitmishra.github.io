@@ -1,456 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Abhijit Mishra</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Abhijit Mishra's Homepage">
-    <meta name="author" content="Abhijit Mishra">
-    <link rel="icon" href="icon.png">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Abhijit Mishra | Academic Profile" />
+    <meta name="author" content="Abhijit Mishra" />
+    <title>Abhijit Mishra | Home</title>
+    <link rel="icon" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="background-canvas" aria-hidden="true"></div>
+    <div class="site-wrap">
+        <header class="top-nav panel">
+            <div class="brand">Abhijit Mishra</div>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="patents.html">Patents</a>
+                <a href="awards.html">Awards &amp; Recog.</a>
+                <a href="talks.html">Talks</a>
+            </nav>
+        </header>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <main>
+            <section class="hero panel tilt-layer">
+                <img src="ab.jpeg" alt="Portrait of Abhijit Mishra" class="profile" />
+                <div>
+                    <p class="eyebrow">Academic Profile</p>
+                    <h1>Abhijit Mishra</h1>
+                    <p class="title">Assistant Professor of Practice · School of Information · The University of Texas at Austin</p>
+                    <p class="meta">
+                        1616 Guadalupe St, Suite 5.202, Austin, TX 78701<br />
+                        Research areas: multimodal AI, cognitive NLP, EEG-language modeling, reliable and human-centered AI.
+                    </p>
+                    <div class="chips">
+                        <span class="chip">Multimodal AI</span>
+                        <span class="chip">Cognitive NLP</span>
+                        <span class="chip">EEG × LLM</span>
+                        <span class="chip">AI Safety</span>
+                    </div>
+                    <div class="hero-links">
+                        <a class="btn primary" href="https://scholar.google.com/citations?hl=en&user=bcbJ0jQAAAAJ">Google Scholar</a>
+                        <a class="btn" href="https://www.linkedin.com/in/abhijit-iitb/">LinkedIn</a>
+                        <a class="btn" href="https://ischool.utexas.edu/profiles/abhijit-mishra">UT iSchool</a>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 1.2em;
-        }
-        .nametitle {
-            text-align: left;
-        }
-        @media screen and (max-width: 768px) {
-            .nametitle {
-                text-align: center;
-            }
-            .latest-news {
-                text-align: center;
-            }
-        }
-        .latest-news {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: #f8f9fa;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
-        }
-        .latest-news h3 {
-            margin-top: 0;
-            font-size: 1.2em;
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
-        .profile-img {
-            border-radius: 50%;
-            max-width: 150px;
-        }
-        .content-section {
-            margin-top: 20px;
-            padding: 15px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-	
-	<!--
-	<style>
-		 body {
-		   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-		   font-size : 1.5em
-		 }
-		 .nametitle {
-			 text-align : left ;
-		  }
-		   @media screen and (max-width: 48em) {
-			 .nametitle {
-			 text-align: center;
-			 }
-		   }
-		   ul {
-			list-style-type: none;
-			}
-			li {
-				padding-bottom: 8px;
-			}
-	</style>
-	-->
-    
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
-    <style>
-     body {
-       font-family: 'Crimson Text', serif;
-       /*font-family: 'Spectral', serif;*/
-       font-size : 1.75em ;
-       line-height: 28px
-     }
-     .nametitle {
-         text-align : left ;
-      }
-       @media screen and (max-width: 48em) {
-         .nametitle {
-         text-align: center;
-         }
-       }
-       ul {
-        list-style-type: none;
-        }
-        li {
-            padding-bottom: 8px;
-        }
-    </style>
-    --> 
-    </head>
-    <body>
-    <div class="container">
-        <div class="page-header">
-        <div class="nametitle">
-            <h1><b>Abhijit Mishra</b></h1>
-        </div>
-        </div>
-		<style>
-			body {
-				font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-				font-size: 1.2em;
-			}
-			.nametitle {
-				text-align: left;
-			}
-			@media screen and (max-width: 768px) {
-				.nametitle {
-					text-align: center;
-				}
-				.latest-news {
-					text-align: center;
-				}
-			}
-			.latest-news {
-				position: absolute;
-				top: 20px;
-				right: 20px;
-				background: #f8f9fa;
-				padding: 10px;
-				border-radius: 8px;
-				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-				max-width: 300px;
-			}
-			.latest-news h3 {
-				margin-top: 0;
-				font-size: 1.2em;
-			}
-			.container {
-				max-width: 1100px;
-				margin: auto;
-				padding: 20px;
-			}
-			.profile-img {
-				border-radius: 50%;
-				max-width: 150px;
-			}
-			.content-section {
-				margin-top: 20px;
-				padding: 15px;
-				background: #ffffff;
-				border-radius: 8px;
-				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-			}
-		</style>
-        <div class="col-md-2 col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
-        <img src="./fac2.jpg" class="img-responsive img-circle" alt="Abhijit Mishra&#39;s photo" title="Abhijit Mishra&#39;s photo" />
-        </div>
-        <div class="col-md-10 col-sm-8 col-xs-12">
-        <p><b>Assistant Professor of Practice</b><br/><a href="https://www.ischool.utexas.edu">School of Information</a><br/>The University of Texas at Austin<br/>1616 Guadalupe St, Suite #5.202<br>Austin, TX - 78701<br/>
-		<p><b>Co-founder and CTO</b><br/><a href="https://www.voilavoice.io">VoilaVoice inc.</a></p>
-        <br/>
-        <a href="https://www.linkedin.com/in/abhijit-iitb/">LinkedIn</a> | <a href="https://scholar.google.com/citations?hl=en&user=bcbJ0jQAAAAJ">Google Scholar</a><br/>
-        </p>
-        </div>
-    </div>   
-    <div class="container">
-        <br/>
-        <a href="#bio">About me</a> | <a href="#research">Research</a> | <a href="#teaching">Teaching</a> | <a href="#publications">Publications</a> | <a href="#talks">Talks</a> | <a href="#patents">Patents</a> | <a href="#services">Services</a> | <a href="#students">Students</a> 
-        
-        <div class="page-header">
-		<h2 id="bio">About me</h2></div>
-		I am an AI researcher, educator, and technology leader working at the intersection of cognitive science, multimodal intelligence, natural language processing, and machine learning. Over the last ten years, my work has spanned foundational advances in computer science, NLP, and AI, with the past eight years dedicated to multimodal systems, including language–vision–speech models and cognition‑inspired AI.
+            <section class="panel section tilt-layer">
+                <h2>About</h2>
+                <p>
+                    I am an AI researcher and educator working at the intersection of language, vision, speech, and neuro-signals.
+                    My research integrates cognitive science with modern machine learning to build robust and human-aligned systems
+                    for healthcare, assistive intelligence, and advanced language technologies.
+                </p>
+                <p>
+                    My industry journey includes high-impact roles at <strong>Apple Siri</strong> and <strong>IBM Research</strong>.
+                    In addition to my academic role, I serve as Co-founder and CTO at
+                    <a href="https://voilavoice.io/">VoilaVoice</a>, supporting practical transfer of voice AI research in an intentionally low-profile capacity.
+                </p>
+            </section>
 
-		My Ph.D. research pioneered the integration of cognitive science with NLP and AI, culminating in a Springer book on Cognitively Inspired Natural Language Processing. At UT Austin’s School of Information, I am currently actively pursuing research at the intersection of EEG signals and large language models, developing methods relevant to clinical psychology, healthcare applications, brain–computer interfaces, and neuro‑AI integration.
+            <section class="panel section journey-strip tilt-layer">
+                <h2>Industry Spotlight</h2>
+                <p>
+                    <strong>From enterprise AI to frontier conversational systems:</strong> I helped build and ship language technologies across
+                    research and product environments, spanning large-scale experimentation, deployment, and user-facing intelligence.
+                </p>
+                <div class="journey-line" aria-label="Industry journey highlights">
+                    <span class="journey-pill">IBM Research · NLP &amp; Generation</span>
+                    <span class="journey-pill">Apple Siri · Conversational AI</span>
+                    <span class="journey-pill">Academia · Cognitive &amp; Multimodal AI</span>
+                </div>
+            </section>
 
-		Across academia, industry (Apple Siri & IBM Research), and start‑ups (VoilaVoice CTO), I translate advanced machine learning into impactful, human‑centered, and scientifically grounded intelligent systems, positioned at the nexus of biological and artificial intelligence.
+            <section class="panel section grid-2">
+                <article class="mini-card tilt-layer">
+                    <h3>Research &amp; Teaching</h3>
+                    <ul>
+                        <li>EEG-to-text generation and neuro-aligned language models.</li>
+                        <li>Multimodal reasoning and privacy-aware LLM systems.</li>
+                        <li>Courses: INF 385T (Deep Learning &amp; Multimodal), INF 385T (NLP), I 320D, I 310D.</li>
+                    </ul>
+                </article>
+                <article class="mini-card tilt-layer">
+                    <h3>Mentorship &amp; Service</h3>
+                    <ul>
+                        <li>Mentoring UT Austin Informatics/MSIS thesis and capstone students.</li>
+                        <li>Area Chair: AAAI 2026, ACL-ARR 2025/2026.</li>
+                        <li>Reviewer/PC roles across ACL, EMNLP, NAACL, EACL, IJCAI, COLING, and TACL.</li>
+                    </ul>
+                </article>
+            </section>
 
-        <div class="page-header">
-        <h2 id="teaching">Teaching</h2></div>
-        <ul>
-			<li>
-				<a href = "https://ischool.utexas.edu/programs/course-offerings/inf-385t-special-topics-information-science-deep-learning-and-multimodal"> INF 385T : Special Topics in Information Science - Deep Learning and Multimodal Systems </a><i>(Offered during Spring Semesters)</i>
-			</li>
-			<li>
-				<a href ="https://ischool.utexas.edu/programs/course-offerings/inf-385t-special-topics-information-science-natural-language-processing"> INF 385T : Special Topics in Information Science - Natural Language Processing and Applications </a><i>(Offered during Fall Semesters)</i>
-			</li>
-			<li>
-				<a href = "https://ischool.utexas.edu/programs/course-offerings/i-320d-topics-human-centered-data-science-applied-machine-learning-python" >I320D - Topics in Human-Centered Data Science Applied Machine Learning with Python</a> <i>(Offered during Fall Semesters)</i> 
-			</li>
-			<li>
-				<a href ="https://ischool.utexas.edu/programs/course-offerings/i-310d-introduction-human-centered-data-science">I 310D - Introduction to Human-Centered Data Science </a> <i>(Offered in both Spring, Fall semesters)</i>
-			</li>
-			<li>
-				<a href ="https://ischool.utexas.edu/programs/course-offerings/i-320d-topics-human-centered-data-science-text-mining-and-nlp-essentials">I 320D - Topics in Human-Centered Data Science: Text Mining and NLP Essentials</a> <i>(Offered during Spring semesters)</i>
-			</li>
-        </ul>
+            <section class="panel section">
+                <h2>Detailed Pages</h2>
+                <div class="quick-links">
+                    <a class="tile tilt-layer" href="publications.html">
+                        <span class="tile-title">Publications</span>
+                        <span class="tile-sub">Complete conferences, journals, workshops, and book references.</span>
+                    </a>
+                    <a class="tile tilt-layer" href="patents.html">
+                        <span class="tile-title">Patents</span>
+                        <span class="tile-sub">USPTO filings and selected IP portfolio details.</span>
+                    </a>
+                    <a class="tile tilt-layer" href="awards.html">
+                        <span class="tile-title">Awards &amp; Recognitions</span>
+                        <span class="tile-sub">Outstanding reviewer recognitions, leadership, and distinctions.</span>
+                    </a>
+                    <a class="tile tilt-layer" href="talks.html">
+                        <span class="tile-title">Tutorials &amp; Invited Talks</span>
+                        <span class="tile-sub">Academic tutorials, keynotes, and invited speaking engagements.</span>
+                    </a>
+                </div>
+            </section>
+        </main>
 
-        <div class="page-header">
-        <h2 id="publications">Publications</h2>
-        B = Books, C = Conference and Journals, W = Workshops and Demo Papers 
-        </div>
-        <ul>
-			<li>
-				<b>[B1]</b> Abhijit Mishra and Pushpak Bhattacharyya, “Cognitively Inspired Natural Language Processing", Springer, Singapore. DOI: https://doi.org/10.1007/978-981-13-1516-9 . URL: <a href = "https://link.springer.com/book/10.1007/978-981-13-1516-9#about"> https://link.springer.com/book/10.1007/978-981-13-1516-9#about </a>
-			</li>
-			<div class="page-header"></div>
-			<li>
-				<b>[C30]</b> Sravanthi, S. L., Maharaj, K., Gunnu, S., Mishra, A., & Bhattacharyya, P. 2025. <a href = "https://arxiv.org/pdf/2506.13559"> Understand the Implication: Learning to Think for Pragmatic Understanding</a>. Findings of <b>(ACL 2025)</b>, Vienna, Austria, July 27-August 1, 2025
-			</li>
-			<li>
-				<b>[C29]</b> Abhijit Mishra, Richard Noh, Hsiang Fu, Mingda Li, Minji Kim. 2025. <a href = "https://arxiv.org/abs/2502.14780">ReVision: A Dataset and Baseline VLM for Privacy-Preserving Task-Oriented Visual Instruction Rewriting</a> <b>Main conference (AACL 2025)</b>, Mumbai, India, December 20-24, 2025
-			</li>
-			<li>
-				<b>[C28]</b> Abhijit Mishra, Shreya Shukla, Jose Torres, Jacek Gwizdka, Shounak Roychowdhury. 2025. <a href = "https://arxiv.org/abs/2410.07507">Thought2Text: Text Generation from EEG Signal using Large Language Models (LLMs)</a>. <i>Findings of the North American Chapter of the Association for Computational Linguistics </i> <b>(NAACL 2025)</b>. New Mexico, USA. April 29–May 4, 2025
-			</li>
-			<li>
-				<b>[C27]</b> Kishan Maharaj, Vitobha Munigala, Srikanth G. Tamilselvam, Prince Kumar, Sayandeep Sen, Palani Kodeswaran, Abhijit Mishra, Pushpak Bhattacharyya. 2025. <a href = "https://arxiv.org/abs/2410.14748"> ETF: An Entity Tracing Framework for Hallucination Detection in Code Summaries. </a> <b>(ACL 2025) Main Conference</b>. Vienna, Austria, July 27-August 1, 2025
-			</li>
-			<li>
-				<b>[C26]</b> Mingda Li, Abhijit Mishra, Utkarsh Mujumdar. 2024. <a href="https://www.arxiv.org/abs/2408.09701"> Bridging the Language Gap: Enhancing Multilingual Prompt-Based Code Generation in LLMs via Zero-Shot Cross-Lingual Transfer</a>. <b>(IJCNN 2025), Rome, Italy</b>, June 25 - July 5, 2025
-			</li>
-			<li>
-				<b>[C25]</b> Abhijit Mishra, Mingda Li, Soham Deo. 2023. <a href="https://arxiv.org/abs/2312.17342"> SentinelLMs: Encrypted Input Adaptation and Fine-tuning of Language Models for Private and Secure Inference</a>. Accepted and to appear In proceedings of the <i>38th Conference of the Association for the Advancement of Artificial Intelligence</i> <b>(AAAI 2024)</b>. Vancouver, Canada, February 20-27, 2024.
-			</li>
-			<li>
-				<b>[C24]</b> Kishan Maharaj, Ashita Saxena, Raja Kumar, Abhijit Mishra, and Pushpak Bhattacharyya <a href = "https://aclanthology.org/2023.findings-emnlp.764.pdf"> Eyes Show the Way: Harnessing Gaze Features for Hallucination Detection </a>. Findings of <i>Empirical Methods for Natural Language Processing</i> <b>(EMNLP 2023). Singapore</b>, Dec 6-10, 2023. 
-			</li>
-			<li>
-				<b>[C23]</b> Jiwen Zhang, Abhijit Mishra, Siddharth Patwardhan and Sachin Agarwal. 2022. <a href="https://arxiv.org/abs/2202.04306">Can Open Domain Question Answering Systems Answer Visual Knowledge Questions?</a>.<i>arXiv preprint arXiv:2202.04306</i>
-			</li>
-			<li>
-				<b>[C22]</b> Abhijit Mishra, Faisal M. Chowdhury, Sagar Manohar, Dan Gutfreund, and Karthik  Sankaranarayanan. 2020. <a href = "https://arxiv.org/abs/2011.03722">Template Controllable keywords-to-text Generation</a>. <i>arXiv preprint arXiv:2011.03722</i>
-			</li>
-			<li>
-				<b>[C21]</b> Sandeep Mathias, Rudra Murthy, Diptesh Kanojia, Abhijit Mishra, and Pushpak Bhattacharyya. 2020. <a href = "https://aclanthology.org/2020.aacl-main.86/">Happy Are Those Who Grade without Seeing: A Multi-Task Learning Approach to Grade Essays Using Gaze Behaviour</a>. In proceedings of the <i>1st  Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing</i> <b>(AACL-IJCNLP 2020)</b>, worldwide.
-			</li>
-			<li>
-				<b>[C20]</b> Sandeep Mathias, Diptesh Kanojia, Abhijit Mishra and Pushpak Bhattacharyya. 2020. <a href = "https://www.ijcai.org/proceedings/2020/0683.pdf">A Survey on Using Gaze Behaviour for Natural Language Processing</a>. In proceedings of the <i>29th International Joint Conference on Artificial Intelligence and the 17th Pacific Rim International Conference on Artificial Intelligence</i> <b>(IJCAI-PRICAI 2020)</b>, Yokohama, Japan. 
-			</li>
-			<li>
-				<b>[C19]</b> Abhijit Mishra, Tarun Tater, Karthik Sankaranarayanan. 2019. <a href="https://aclanthology.org/D19-1636/">A Modular Architecture for
-				Unsupervised Sarcasm Generation</a>. In proceedings of the <i>Empirical Methods for Natural Language Processing</i> <b>(EMNLP 2019)</b>, Hong Kong, China, 3rd Nov - 7th Nov, 2019
-			</li>
-			<li>
-				<b>[C18]</b> Anirban Laha, Parag Jain, Abhijit Mishra, Karthik Sankaranarayanan. 2019. <a href="https://arxiv.org/abs/1810.02889">Scalable Micro planned Generation of Discourse from Structured Data</a>. <i>Computational Linguistics, MIT Press</i>
-			</li>
-			<li>
-				<b>[C17]</b> Sai Surya, Abhijit Mishra, Anirban Laha, Parag Jain, Karthik Sankaranarayanan. 2019. <a href="https://aclanthology.org/P19-1198/">Unsupervised Neural Text Simplification</a>. In proceedings of the <i>57th Annual Conference of the Association for Computational Linguistics</i> <b>(ACL 2019)</b>, Florence, Italy, 28th July-2nd Aug, 2019.
-			</li>
-			<li>
-				<b>[C16]</b> Parag Jain, Abhijit Mishra, Amar P. Azad, Karthik Sankaranarayanan. 2019. <a href="https://arxiv.org/abs/1809.04556">Unsupervised Controllable Text Formalization</a>. In proceedings of the <i>33rd Conference of the Association for the Advancement of Artificial Intelligence</i> <b>(AAAI 2019)</b>, Hawaii, USA, 27th Jan - 1st Feb, 2019
-			</li>
-			<li>
-				<b>[C15]</b> Sandeep Mathias, Diptesh Kanojia, Kevin Patel, Samarth Agrawal, Abhijit Mishra and Pushpak Bhattacharyya. 2018. <a href="https://aclanthology.org/P18-1219/">Eyes are the Windows to the Soul: Predicting the Rating of Text Quality Using Gaze Behaviour</a>. In proceedings of the <i>56th Annual Conference of the Association for Computational Linguistics</i> <b>(ACL 2018)</b>, Melbourne, Australia, 15-20 July, 2018.
-			</li>
-			<li>
-				<b>[C14]</b> Vitobha Munigala, Abhijit Mishra, Srikanth Govindaraj Tamilselvam, Shreya Khare, Riddhiman Dasgupta and Anush Sankaran. 2018. <a href="https://dl.acm.org/doi/10.1145/3184558.3186345">PersuaAIDE ! An Adaptive Persuasive Text Generation System for Fashion Domain</a>. In proceedings of the <i>Web Conference</i> <b>(WWW 2018)</b>, Lyon, France, 23th April - 27th April,2018
-			</li>
-			<li>
-				<b>[C13]</b> Abhijit Mishra, Srikanth Tamilselvam, Riddhiman Dasgupta, Seema Nagar and Kuntal Dey. 2018. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/12068">Cognition-Cognizant Sentiment Analysis with Multitask Subjectivity Summarization based on Annotators' Gaze Behavior</a>. In proceedings of the <i>32nd Conference of the Association for the Advancement of Artificial Intelligence</i> <b>(AAAI 2018)</b>, New Orleans, USA, 2nd February - 7th February, 2018
-			</li>
-			<li>
-				<b>[C12]</b> Srikanth Tamilselvam, Seema Nagar, Abhijit Mishra and Kuntal Dey. 2017. <a href="https://aclanthology.org/I17-1053/">Graph Based Sentiment Aggregation using ConceptNet Ontology</a>. In proceedings of the <i>International Joint Conference on Natural Language Processing</i> <b>(IJCNLP 2017)</b>, Taipei, Taiwan, 27 November-1st December, 2017
-			</li>
-			<li>
-				<b>[C11]</b>b> Shweta Garg, Sudhanshu S Singh, Abhijit Mishra and Kuntal Dey. 2017. <a href="https://aclanthology.org/I17-2059/">CVBed: Structuring CVs using Word Embeddings</a>. In proceedings of the <i>International Joint Conference on Natural Language Processing</i> <b>(IJCNLP 2017)</b>, Taipei, Taiwan, 27 November-1st December, 2017
-			</li>
-			<li>
-				<b>[C10]</b> Joe Cheri Ross, Abhijit Mishra, Kaustuv Kanti Ganguli and Pushpak Bhattacharyya. 2017. <a href="https://ir.webis.de/anthology/2017.ismir_conference-2017.65/">Identifying Raga Similarity Through Embeddings Learned from Compositions' Notation</a>. In proceedings of the Annual Conference of the <i>International Society for Music Information Retrieval</i> <b>(ISMIR 2017)</b>, Suzhou, China, 23-28 October, 2017
-			</li>
-			<li>
-				<b>[C9]</b> Abhijit Mishra, Kuntal Dey and Pushpak Bhattacharyya. 2017. <a href="https://aclanthology.org/P17-1035/">Learning Cognitive Features from Gaze Data for Sentiment and Sarcasm Classiffication using Convolutional Neural Network</a>. In proceedings of the <i>55th Annual Conference of the Association for Computational Linguistics</i> <b>(ACL 2017)</b>, Vancouver, Canada, 30 July-4 August, 2017
-			</li>
-			<li>
-				<b>[C8]</b> Abhijit Mishra, Diptesh Kanojia, Seema Nagar, Kuntal Dey, Pushpak Bhattacharyya. 2017. <a herf="https://ojs.aaai.org/index.php/AAAI/article/view/11159">Scanpath Complexity: Modeling Reading Effort using Gaze Information</a>. In proceedings of the <i>31st Conference of the Association for the Advancement of Artificial Intelligence</i> <b>(AAAI 2017)</b>, San Francisco, USA, 4-9 February, 2017
-			</li>
-			<li>
-				<b>[C7]</b> Abhijit Mishra, Diptesh Kanojia, Seema Nagar, Kuntal Dey and Pushpak Bhattacharyya. 2016. <a href="https://aclanthology.org/P16-1104/">Harnessing Cognitive Features for Sarcasm Detection</a>. In proceedings of the <i>54th Annual Conference of the Association for Computational Linguistics</i> <b>(ACL 2016)</b>, Berlin, Germany, 7-12 August, 2016
-			</li>
-			<li>
-				<b>[C6]</b> Abhijit Mishra, Diptesh Kanojia, Kuntal Dey, Seema Nagar and Pushpak Bhattacharyya. 2016. <a href="https://aclanthology.org/K16-1016/">Leveraging Cognitive Features for Sentiment Analysis</a>. In proceedings of the <i>SIGNLL Conference on Computational Natural Language Learning</i> <b>(CoNLL 2016)</b>, Berlin, Germany, August 11-12, 2016
-			</li>
-			<li>
-				<b>[C5]</b> Abhijit Mishra, Diptesh Kanojia and Pushpak Bhattacharyya. 2016. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/9884">Predicting Readers' Sarcasm Understandability by Modelling Gaze Behaviour</a>. In proceedings of the <i>30th Conference of the Association for the Advancement of Artificial Intelligence</i> <b>(AAAI 2016)</b>, Phoenix, USA, Feb 12-17, 2016
-			</li>
-			<li>
-				<b>[C4]</b> Aditya Joshi, Abhijit Mishra, Balamurali AR, Pushpak Bhattacharyya, Mark J Carman. 2015. <a href="https://aclanthology.org/P15-2100/">A Computational Approach for Automatic Prediction of Drunk-texting</a>. In proceedings of the <i>53rd Annual Conference of the Association for Computational Linguistics</i> <b>(ACL 2015)</b>, Beijing, China, July 2015 (short-paper)
-			</li>
-			<li>
-				<b>[C3]</b> Aditya Joshi, Abhijit Mishra, Nivvedan Senthamilselvan and Pushpak Bhattacharyya. 2014. <a href="https://aclanthology.org/P14-2007.pdf">Measuring Sentiment Annotation Complexity of Text</a>. In proceedings of the <i>52nd Annual Conference of the Association for Computational Linguistics</i> <b>(ACL 2014)</b>, Baltimore, USA, 23-25 June, 2014 (short-paper)
-			</li>
-			<li>
-				<b>[C2]</b> Anoop Kunchukuttan, Abhijit Mishra, Rajen Chatterjee, Ritesh Shah and Pushpak Bhattacharyya. 2014. <a href="https://aclanthology.org/L14-1355/">Shata-Anuvadak: Tackling Multiway Translation of Indian Languages</a>. In proceedings of the <i>Language Resources and Evaluation Conference</i> <b>(LREC 2014)</b>, Rekjyavik, Iceland, 26-31 May, 2014
-			</li>
-			<li>
-				<b>[C1]</b> Abhijit Mishra and Pushpak Bhattacharyya, Michael Carl. 2013. <a href="https://aclanthology.org/P13-2062.pdf">Automatically Predicting Sentence Translation Difficulty</a>. In proceedings of the <i>51st Annual Conference of the Association for Computational Linguistics</i> <b>(ACL 2013)</b>, Soffia, Bulgaria, 4-9 August, 2013 (short-paper)
-			</li>
-        <div class="page-header"></div>
-			<li>
-				<b>[W8]</b> Parag Jain, Priyanka Agrawal, Abhijit Mishra, Mohak Sukhwani and Anirban Laha. 2017. <a href="https://arxiv.org/abs/1707.05501">Story Generation from Sequence of Independent Short Descriptions</a>. <i>ML4Creativity, SIGKDD Workshop</i>, Halifax, Nova Scotia - Canada, 2017
-			</li>
-			<li>
-				<b>[W7]</b> Joe Cheri, Abhijit Mishra and Pushpak Bhattacharyya. 2016. <a href="https://aclanthology.org/W16-1904/">Leveraging Annotators' Gaze Behaviour for Coreference Resolution</a>. ACL 2016 <i>Workshop on Cognitive Aspects of Computational Language Learning</i> <b>(CogACLL 2016)</b> at ACL 2016, Berlin, Germany, August 11, 2016
-			</li>
-			<li>
-				<b>[W6]</b> Diptesh Kanojia, Shehzaad Dhuliawala, Abhijit Mishra, Naman Gupta and Pushpak Bhattacharyya. 2015. <a href="https://aclanthology.org/W15-5916/">TransChat: Cross-Lingual Instant Messaging for Indian Languages</a>. <b>ICON 2015</b>, December 2015
-			</li>
-			<li>
-				<b>[W5]</b> Abhijit Mishra, Aditya Joshi and Pushpak Bhattacharyya. 2014. <a href="https://aclanthology.org/W14-2623.pdf">A cognitive study of subjectivity extraction in sentiment annotation</a>. 5th Workshop on <i>Computational Approaches to Subjectivity, Sentiment and Social Media Analysis</i> <b>(WASSA 2014)</b>, Baltimore, USA, 27 June, 2014
-
-			</li>
-			<li>
-				<b>[W4]</b> Anoop Kunchukuttan, Ratish Pudupully, Rajen Chatterjee, Abhijit Mishra, Pushpak Bhattacharyya. 2014. <a href="https://www.cse.iitb.ac.in/~anoopk/publications/icon_2014_iitbsys.pdf">The IIT Bombay SMT System for ICON 2014 Tools Contest</a>. NLP Tools Contest at ICON 2014 (ICON 2014), Goa, India, Dec 2014
-			</li>
-			<li>
-				<b>[W3]</b> Piyush Dungarwal, Rajen Chatterjee, Abhijit Mishra, Anoop Kunchukuttan, Ritesh Shah and Pushpak Bhattacharyya. 2014. <a href="https://aclanthology.org/W14-3308.pdf">The IIT Bombay Hindi-English Translation System at WMT 2014</a>. 9th Workshop on <i>Statistical Machine Translation</i> <b>(WMT14)</b>, Baltimore, USA, 26-27 June, 2014
-			</li>
-			<li>
-				<b>[W2]</b> Anoop Kunchukuttan, Rajen Chatterjee, Shourya Roy, Abhijit Mishra and Pushpak Bhattacharyya. 2013. <a href="https://aclanthology.org/P13-4030.pdf">TransDoop: A Map-Reduce based Crowdsourced Translation for Complex Domain</a>. <b>ACL 2013</b>, Soffia, Bulgaria, 4-9 August, 2013
-			</li>
-			<li>	
-				<b>[W1]</b> Abhijit Mishra, Michael Carl and Pushpak Bhattacharyya. 2012. <a href="https://aclanthology.org/W12-4906.pdf">A Heuristic Based Approach for Systematic Error Correction of Gaze Data for Reading</a>. First Workshop on <i>Eye Tracking and NLP</i>, part of COLING 2012. Mumbai, India, 15 Dec, 2012
-			</li>
-        </ul>
-    <div class="page-header">
-        <h2 id="talks">Tutorials and Invited Talks</h2>
-        </div>
-		<ul>
-			<li><i>26 February, 2025: </i> Shreya Shukla, Abhijit Mishra, Jose Torres, Jacek Gwizdka, Shounak Roychowdhury. <a href="https://sites.google.com/view/aaai2025bci4genai/home">Tutorial onAdvancing Brain-Computer Interfaces with Generative AI for Text, Vision, and Beyond</a> <b>AAAI 2025</b></b>. Philadelphia, Pennsylvania. February 26, 2025</li>
-			<li><i>25 May, 2024: </i> Nihar Sahoo, Ashita Saxena, Kishan Maharaj, Arif Ahmad, Abhijit Mishra and Pushpak Bhattacharyya. <a href="https://lrec-coling-2024.org/tutorials/">Tutorial on Addressing Bias and Hallucination in Large Language Models</a> <b>LREC-COLING 2024</b>. Torino, Italy. May 20-25, 2024.</li>
-			<li><i>4th January, 2021:</i> Industry Keynote <a href="https://cods-comad.in/distinguished_speakers.html#mishra">Frontiers in Natural Language Understanding for Conversational Platforms</a>, <b>CODS-COMAD</b>, 2021, Worldwide </li>
-			<li><i>28 July, 2019:</i> <a href="https://sites.google.com/view/acl-19-nlg">Storytelling from Structured Data and Knowledge Graphs: An NLG Perspective</a>. Tutorial at the 57th Annual Conference of <b>ACL 2019</b>, Florence, Italy. </li>
-			<li><i>18 June, 2019:</i> <a href="https://www.youtube.com/watch?v=2vby-_ndJB8"></a>Controllable Text Style Transfer”, AI Horizon Network Seminar Series, IBM (worldwide)</li>
-			<li><i>18 Jan, 2019:</i> Tutorial on “Natural Language Generation and its Applications”, Indian Institute of Science, Bangalore, India</li>
-			<li><i>28 July, 2018:</i> Invited talk at The FAER Faculty Development Workshop on AI\&ML, M.S. Ramaiah University titled “Understanding how machines understand us: A perspective on Natural Language Processing”, M.S. Ramaiah University, Bangalore, India</li>
-			<li><i>26 Apr, 2018:</i> Tutorial on “Cognitively Inspired Natural Language Understanding and Generation”, Dharmsinh Desai University, Gujarat, India</li>
-			<li><i>20 Jan, 2018:</i> Tutorial on “Natural Language Generation”, Indian Institute of Science, Bangalore, India</li>
-			<li><i>20 June 2016:</i> Tutorial on “Natural Language Processing and Machine Learning”, VIVA Institute of Technology, Mumbai, India</li>
-		</ul>
-      
-    <div class="page-header">
-        <h2 id="patents">Selected Patents</h2>
-        </div>
-        <ol>
-			<li>	
-				Abhijit Mishra, Alexander Mintz. 2025. System and Method for Semi‑Supervised Prompt‑Based Speech Transformation with Users’ Natural Voice Preservation (Filed at USPTO).
-			</li>
-			<li>
-				Abhijit Mishra, Zander Mintz. 2025. System and Method for Automated Video Creation from Documents with User Voice Cloning, Avatar Lip Sync, and Real‑time AI Chatbot Tutoring (Filed at USPTO).
-			<li>
-				Vinayak Sastri, Joydeep Mondal, Abhijit Mishra, Seema Nagar, Kuntal Dey. 2019. <a href= "https://patents.justia.com/patent/20210065043"><i>Dynamic Content Rating Assistant</i></a>. 20210065043. US Patents and Trademarks Office (USPTO)
-			</li>
-			<li>
-				Abhijit Mishra, Enara C Vijil, Seema Nagar, Kuntal Dey. 2018. <a href="https://patents.justia.com/patent/20200302316"><i>Question Answering System influenced by User Behavior and Text Metadata Generation</i></a>. 20200302316. US Patents and Trademarks Office (USPTO)
-			</li>
-			<li>
-				Abhijit Mishra, Parag Jain, Anirban Laha, Karthik Sankaranarayanan. 2018. <a href="https://patents.justia.com/patent/20200073944"><i>Generation of Variable Natural Language Descriptions From Structured Data</i></a>. 20200073944. US Patents and Trademarks Office (USPTO)
-			</li>
-			<li>
-				Parag Jain, Amar Azad, Abhit Mishra, Karthik Sankaranarayanan. 2018. <a href ="https://patents.justia.com/patent/20200034432"><i>Unsupervised Tunable Stylized Text Transformations</i></a>. 20200034432. US Patents and Trademarks Office (USPTO)
-			</li>
-			<li>
-				Abhijit Mishra, Anirban Laha, Parag Jain, Karthik Sankaranarayanan. 2018. <a href="https://patents.justia.com/patent/20200302011"><i>Real time assessment of Text Consistency</i></a>. 20200302011. US Patents and Trademarks Office (USPTO)
-			</li>
-			<li>
-				Abhijit Mishra, Parag Jain, Amar Azad, Karthik Sankaranarayanan. 2018. <a href= "https://patents.justia.com/patent/20200311195"><i>Controllable Style-Based Text Transformation</i></a>20200311195, US Patents and Trademarks Office (USPTO)
-			</li>
-        </ol>
-    <div class="page-header">
-        <h2 id="services">Academic Services</h2>
-        </div>
-        <b>Area Chair</b>
-		<ul>
-			<li>Association for the Advancement of Artificial Intelligence (AAAI 2026)</li>
-			<li> Association for Computational Linguistics (ACL‑ARR 2025 / 2026)</li>
-		</ul>
-        <b>Senior Program Committee Member</b>
-		<ul>
-			<li>Association for the Advancement of Artificial Intelligence (AAAI 2025, AAAI 2024, AAAI 2022, AAAI 2021)</li>
-		</ul>
-		<b>Program Committee Member / Reviewer</b>
-		<ul>
-			<li>Association for Computational Linguistics (ACL 2025, ACL 2024, ACL 2023, ACL 2022, ACL 2021, ACL 2020, ACL 2019, ACL 2018) <i>[adjudged as outstanding reviewer]</i>, ACL 2017)</li>
-			<li>Transactions of the Association for Computational Linguistics (TACL 2023, TACL 2022, TACL 2020)</li>
-			<li>Association for the Advancement of Artificial Intelligence (AAAI 2023, AAAI 2022, AAAI 2020)</li>
-			<li>International Joint Conference on Artificial Intelligence (IJCAI 2022, IJCAI 2020)</li>
-			<li>Empirical Methods for Natural Language Processing (EMNLP 2025, EMNLP 2024, EMNLP 2023, EMNLP 2022, EMNLP 2021, EMNLP 2020 [Adjudged as outstanding  reviewer], EMNLP 2019, EMNLP 2018)</li>
-			<li>Computational Linguistics Conference (COLING  2022, COLING  2020, COLING  2018)</li>
-			<li>North American chapter of Association for Computational Linguistics (NAACL 2025, NAACL 2023, NAACL 2022, NAACL 2016)</li>
-			<li>European Chapter of Association for Computational Linguistics (EACL 2023, EACL 2021)</li>
-			<li>The Asia-Pacific Chapter of the Association for Computational Linguistics (AACL-IJCNLP 2023, AACL-IJCNLP 2023, AACL-IJCNLP 2022, AACL 2020,</li>
-			<li>ACM Computing Surveys (ACM-CSur, 2020)</li>
-			<li>ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP 2018)</li>
-			<li>Language Resources and Evaluation Conference (LREC 2018)</li>
-			<li>IEEE Transactions on Affective Computing (2018)</li>
-			<li>Conference on Machine Translation (WMT 2017)</li>
-		</ul>
-		<b>Organizing Committee member</b>
-		<ul>
-			<li>Computational Linguistic Conference (COLING 2012), Mumbai, India</li>
-		</ul>
-	<div class="page-header">
-        <h2 id="students">Students</h2>
-        </div>
-        <b>UT School of Information Students</b>
-        <ol>
-			<li><i>Christina Liu</i> (Informatics Honors Thesis, 2025, Ongoing): Prompt Engineering for Brain Signal to Text Generation with Large Language Models.</li>
-			<li><i>Akshaj Murhekar</i> (MSIS Honors Thesis, 2025, Ongoing): BCI for LLMs.</li>
-			<li><i>Rosalyn Lu</i> (Informatics Honors Thesis, 2024, Completed): Multilingual Multimodal VLMs</li>
-			<li><i>Thang Troung</i> (Informatics Honors Thesis, 2024, Completed): Multilingual Multimodal VLMs</li>
-			<li><i>Walt Wu</i> (Informatics Capstone, 2024, Completed): Synthetic Data Generation for Query Rewriting</li>
-			<li><i>Sean Fu</i> (Informatics Capstone, 2024, Completed): Multimodal SLMs for Query Rewriting</li>
-			<li><i>Krishna Shri Somepalli</i> (Master's Report, 2024, Graduated): Personal Identifiable Information Discovery using Language Models</li>
-			<li><i>Shreya Shukla</i> (Master's Report, 2024, Graduated): EEG to Text Generation</li>
-			<li><i>Mingda Li</i> (Informatics Capstone, 2023, Graduated): Zero Short Visual Knowledge Question Answering with LLMs</li>
-			<li><i>Carla Gonzalez</i> (Informatics Capstone, 2023, Graduated): Concept Guided LLMs for Zero Short Visual Knowledge Question Answering (2023 Informatics Capstone)</li>
-			<li><i>Sonali Hornick</i> (Informatics Capstone, 2023, Graduated): An Empirical Evaluation of LLMs for Zero-shot Visual Knowledge Question Answering</li>
-        </ol>
-        <b>Co-supervising Outside of UT</b>
-        <ol>
-			<li>Hemanth K. (MS Research, IIT Bombay, India, 2025, Ongoing): Emotion‑Aware LLMs.	</li>
-			<li>Kishan Maharaj (MS Research, IIT Bombay, Graduated): Cognitively Inspired NLP for Hallucination Detection in Generative NLP Models</li>
-			<li>Ashita Saxena (MS Research, IIT Bombay, Graduated): Hallucination Detection and Mitigation in Generative NLP Models</li>
-        </ol>
-        <b>Internships Mentored</b>
-        <ol>
-			<li>Neha Hulkund (BS, MIT, 2021):  Leveraging Scene Descriptions for Open Domain Visual Question Answering, <b>at Apple inc.</b>, Summer 2021</li>
-			<li>Ivy Zhang (Rotation Engineer, Apple inc., 2021):  Adapting T5 Closed Book QA for Knowledge Oriented Visual Queries <b>at Apple inc.</b>, Summer 2021</li>
-			<li>Kevin Patel (Ph.D., IIT Bombay, 2019): Explaining Black-box NLP Models through Eye-tracking <b>at IBM Research</b>, Summer 2019</li>
-			<li>Sai Surya (B.Tech, IIT Kharagpur, 2018): Unsupervised Neural Text Simplification <b>at IBM Research</b>, Summer 2018</li>
-			<li>Krishna Guddipati (B.Tech, IIT Bombay, 2017): Scoring Grammaticality of NLG output <b>at IBM Research</b>, Summer 2017</li></li>
-        </ol>
-        
-    <div class="page-header"></div>
-    <em>Last updated on 11/18/2025 at 5:00 p.m. CST</em>
-    <div class="form-group">
-        &nbsp;
+        <footer class="footer panel">
+            Last updated: February 16, 2026
+        </footer>
     </div>
-    </div>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
