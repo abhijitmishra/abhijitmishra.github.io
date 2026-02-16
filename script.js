@@ -24,12 +24,19 @@ const renderVisitCounter = async () => {
   counterLine.textContent = 'Total visits: loading...';
   footer.appendChild(counterLine);
 
-  const renderBadgeFallback = () => {
-    counterLine.textContent = 'Total visits:';
-    const badgeWrap = document.createElement('div');
-    badgeWrap.className = 'footer-counter-badge';
-    badgeWrap.innerHTML = '<img alt="Visit counter" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fabhijitmishra.github.io&count_bg=%23C789FF&title_bg=%2352439E&icon=github.svg&icon_color=%23E7E7E7&title=visits&edge_flat=false" />';
-    footer.appendChild(badgeWrap);
+  const renderLocalFallback = () => {
+    const localKey = 'site-local-visit-count';
+    const sessionKey = 'site-local-visit-counted';
+    const hasCountedInSession = sessionStorage.getItem(sessionKey) === '1';
+
+    let localCount = Number(localStorage.getItem(localKey) || '0');
+    if (!hasCountedInSession) {
+      localCount += 1;
+      localStorage.setItem(localKey, String(localCount));
+      sessionStorage.setItem(sessionKey, '1');
+    }
+
+    counterLine.textContent = `Visits (this browser): ${localCount.toLocaleString()}`;
   };
 
   try {
@@ -37,7 +44,8 @@ const renderVisitCounter = async () => {
     const key = 'total-visits';
 
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 4500);
+    let timeout;
+    timeout = setTimeout(() => controller.abort(), 4500);
     const response = await fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`, { signal: controller.signal });
     clearTimeout(timeout);
 
@@ -49,7 +57,7 @@ const renderVisitCounter = async () => {
     const count = typeof data.value === 'number' ? data.value : 0;
     counterLine.textContent = `Total visits: ${count.toLocaleString()}`;
   } catch {
-    renderBadgeFallback();
+    renderLocalFallback();
   }
 };
 
