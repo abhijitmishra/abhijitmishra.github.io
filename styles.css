@@ -407,6 +407,12 @@ a:hover {
     letter-spacing: 0.01em;
 }
 
+.footer-counter-badge {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 930px) {
     .hero {
         grid-template-columns: 1fr;
