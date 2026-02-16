@@ -13,7 +13,16 @@ const revealObserver = new IntersectionObserver(
 
 observed.forEach((item) => revealObserver.observe(item));
 
+const isVisitsPage = () => {
+  const path = window.location.pathname.toLowerCase();
+  return path.endsWith('/visits.html') || path === '/visits.html';
+};
+
 const renderVisitCounter = async () => {
+  if (!isVisitsPage()) {
+    return;
+  }
+
   const footer = document.querySelector('.footer');
   if (!footer) {
     return;
