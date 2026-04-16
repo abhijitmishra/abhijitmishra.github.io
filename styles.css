@@ -1,4 +1,5 @@
 :root {
+    color-scheme: dark;
     --bg: #141414;
     --paper: rgba(30, 31, 33, 0.86);
     --paper-strong: rgba(37, 38, 41, 0.94);
@@ -189,15 +190,16 @@ body {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 172px;
-    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
     align-items: center;
     padding: 24px;
     background: linear-gradient(135deg, var(--paper-strong), rgba(44, 39, 33, 0.94) 56%, rgba(24, 24, 24, 0.98));
 }
 
 .profile-frame {
+    flex: 0 0 172px;
     width: 172px;
     height: 172px;
     border-radius: 8px;
@@ -206,9 +208,7 @@ body {
         0 0 0 1px rgba(210, 163, 94, 0.12) inset,
         0 10px 28px rgba(0, 0, 0, 0.28),
         0 0 40px rgba(210, 163, 94, 0.08);
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
+    order: 2;
     overflow: hidden;
 }
 
@@ -223,8 +223,8 @@ body {
 }
 
 .hero > div {
-    grid-column: 1;
-    grid-row: 1;
+    order: 1;
+    flex: 1 1 auto;
     min-width: 0;
 }
 
@@ -632,21 +632,200 @@ a:hover {
     justify-content: center;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+        --bg: #f5efe4;
+        --paper: rgba(255, 251, 245, 0.9);
+        --paper-strong: rgba(255, 248, 239, 0.96);
+        --ink: #2d241a;
+        --muted: #5f5649;
+        --border: rgba(146, 102, 42, 0.26);
+        --accent: #9b6925;
+        --accent-2: #b47b2f;
+        --accent-3: #8d7961;
+        --shadow: 0 18px 44px rgba(85, 59, 24, 0.12);
+        --shadow-strong: 0 26px 70px rgba(85, 59, 24, 0.18);
+    }
+
+    body {
+        background: var(--bg);
+    }
+
+    .background-canvas {
+        background:
+            radial-gradient(920px 560px at 18% 10%, rgba(180, 123, 47, 0.16) 0%, transparent 58%),
+            radial-gradient(760px 420px at 88% 18%, rgba(255, 255, 255, 0.52) 0%, transparent 62%),
+            linear-gradient(180deg, #f8f3eb 0%, #efe4d3 45%, #f5efe4 100%);
+    }
+
+    .background-canvas::before {
+        background:
+            linear-gradient(rgba(114, 80, 36, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(114, 80, 36, 0.045) 1px, transparent 1px);
+        opacity: 0.28;
+    }
+
+    .background-canvas::after {
+        background:
+            linear-gradient(180deg, transparent, rgba(180, 123, 47, 0.06), transparent),
+            radial-gradient(circle at 82% 22%, rgba(180, 123, 47, 0.14) 0, transparent 18%);
+    }
+
+    .brand,
+    h1,
+    h2,
+    h3,
+    .tile-title,
+    .award-kpi-value,
+    .feature-list strong,
+    .journey-pill,
+    .btn,
+    .btn.primary,
+    .nav-links a:hover,
+    .nav-links a.active,
+    .nav-links a.nav-cta,
+    .nav-links a.nav-cta:hover,
+    .nav-links a.nav-cta.active {
+        color: #2a2118;
+    }
+
+    .brand {
+        text-shadow: 0 0 10px rgba(180, 123, 47, 0.18);
+    }
+
+    .title {
+        color: #65411e;
+    }
+
+    .nav-links a {
+        color: #533d25;
+        border-color: rgba(146, 102, 42, 0.18);
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: linear-gradient(120deg, rgba(180, 123, 47, 0.18), rgba(255, 255, 255, 0.62));
+        box-shadow: inset 0 0 0 1px rgba(180, 123, 47, 0.08), 0 0 18px rgba(180, 123, 47, 0.08);
+    }
+
+    .nav-links a.nav-cta {
+        border-color: rgba(180, 123, 47, 0.4);
+        background: linear-gradient(120deg, rgba(214, 171, 109, 0.45), rgba(244, 231, 211, 0.95));
+        box-shadow:
+            inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+            0 0 16px rgba(180, 123, 47, 0.14),
+            0 0 30px rgba(180, 123, 47, 0.08);
+    }
+
+    .nav-links a.nav-cta:hover,
+    .nav-links a.nav-cta.active {
+        border-color: rgba(180, 123, 47, 0.62);
+        background: linear-gradient(120deg, rgba(214, 171, 109, 0.56), rgba(255, 245, 228, 1));
+        box-shadow:
+            inset 0 0 0 1px rgba(255, 255, 255, 0.72),
+            0 0 20px rgba(180, 123, 47, 0.18),
+            0 0 40px rgba(180, 123, 47, 0.1);
+    }
+
+    .panel::before {
+        background: linear-gradient(90deg, transparent, rgba(180, 123, 47, 0.52), transparent);
+    }
+
+    .hero {
+        background: linear-gradient(135deg, var(--paper-strong), rgba(240, 228, 210, 0.96) 56%, rgba(249, 242, 232, 0.98));
+    }
+
+    .mini-card,
+    .tile,
+    .award-card,
+    .award-intro,
+    .award-note,
+    .journey-strip,
+    .page-header {
+        background: linear-gradient(145deg, rgba(255, 250, 244, 0.94), rgba(244, 235, 221, 0.94));
+    }
+
+    .journey-strip {
+        background: linear-gradient(125deg, rgba(255, 249, 242, 0.98), rgba(240, 225, 203, 0.9) 45%, rgba(248, 240, 229, 0.98));
+    }
+
+    .profile-frame {
+        border-color: rgba(146, 102, 42, 0.32);
+        box-shadow:
+            0 0 0 1px rgba(146, 102, 42, 0.08) inset,
+            0 10px 24px rgba(88, 61, 27, 0.12),
+            0 0 28px rgba(180, 123, 47, 0.08);
+    }
+
+    .chip,
+    .badge,
+    .journey-pill,
+    .award-tag,
+    .btn,
+    .feature-list li,
+    .award-kpi {
+        border-color: rgba(146, 102, 42, 0.2);
+        background: rgba(180, 123, 47, 0.08);
+        color: #4c3926;
+    }
+
+    .btn:hover {
+        background: rgba(180, 123, 47, 0.15);
+        border-color: rgba(180, 123, 47, 0.52);
+    }
+
+    .btn.primary {
+        background: linear-gradient(120deg, rgba(214, 171, 109, 0.46), rgba(235, 216, 188, 0.96));
+        border-color: rgba(180, 123, 47, 0.42);
+        box-shadow: 0 0 18px rgba(180, 123, 47, 0.1);
+    }
+
+    .award-year,
+    .award-inline-year {
+        background: linear-gradient(120deg, rgba(214, 171, 109, 0.28), rgba(245, 232, 211, 0.9));
+        border-color: rgba(180, 123, 47, 0.28);
+        color: #4c3520;
+    }
+
+    .award-summary,
+    .award-meta,
+    .feature-source,
+    .award-kpi-label {
+        color: #5d5245;
+    }
+
+    .feature-list strong,
+    .award-kpi-value,
+    h1,
+    h2,
+    h3 {
+        text-shadow: none;
+    }
+
+    a:hover {
+        color: #6e4618;
+    }
+
+    .journey-pill-icon {
+        box-shadow: 0 0 0 1px rgba(146, 102, 42, 0.1);
+        background: rgba(255, 255, 255, 0.65);
+    }
+}
+
 @media (max-width: 930px) {
     .hero {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
     }
 
-    .profile {
-        grid-column: auto;
-        grid-row: auto;
+    .profile-frame {
         margin: 0 auto;
     }
 
     .hero > div {
-        grid-column: auto;
-        grid-row: auto;
+        flex: none;
     }
 
     .hero-links,
