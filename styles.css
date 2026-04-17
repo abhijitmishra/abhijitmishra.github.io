@@ -259,6 +259,10 @@ h1 {
     text-shadow: 0 0 18px rgba(210, 163, 94, 0.14);
 }
 
+.degree-tag {
+    text-transform: none;
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 10px;
