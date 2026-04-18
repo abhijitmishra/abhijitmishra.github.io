@@ -93,6 +93,7 @@ body {
 }
 
 .brand {
+    flex: 0 0 auto;
     color: #fff;
     font-family: "Teko", "Barlow", sans-serif;
     font-weight: 800;
@@ -103,8 +104,11 @@ body {
 }
 
 .nav-links {
+    flex: 1;
     display: flex;
-    flex-wrap: wrap;
+    min-width: 0;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
     gap: 10px;
 }
 
@@ -116,6 +120,7 @@ body {
     font-size: 0.95rem;
     font-weight: 700;
     letter-spacing: 0.04em;
+    white-space: nowrap;
     text-transform: uppercase;
     border: 1px solid rgba(176, 132, 75, 0.14);
     background: rgba(255, 255, 255, 0.03);
@@ -424,6 +429,55 @@ a:hover {
     color: #fff;
 }
 
+.course-flat-list h2 {
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.course-flat-list h2:first-of-type {
+    margin-top: 0;
+}
+
+.semester-bullets {
+    margin: 0 0 8px;
+    padding-left: 22px;
+}
+
+.semester-bullets li {
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.semester-bullets a {
+    color: #fff1d8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.semester-bullets a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.new-course-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(120deg, #ff7a7a, #ffcf6b, #fff07a, #7dfcc9, #7faeff);
+    background-size: 220% 220%;
+    color: #1d130f;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 0 18px rgba(255, 191, 94, 0.18);
+    animation: navCtaShift 6s linear infinite;
+}
+
 .badge-row {
     display: flex;
     flex-wrap: wrap;
@@ -680,14 +734,22 @@ a:hover {
     position: relative;
     z-index: 1;
     display: grid;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 8px;
+    margin-top: 8px;
     flex: 1;
     min-height: 0;
     overflow-y: auto;
-    padding-right: 6px;
+    padding-right: 4px;
     scrollbar-width: thin;
     scrollbar-color: rgba(210, 163, 94, 0.72) rgba(255, 255, 255, 0.04);
+}
+
+.news-sidebar-footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .news-sidebar-list::-webkit-scrollbar {
@@ -725,7 +787,7 @@ a:hover {
 
 .news-sidebar-item {
     position: relative;
-    padding: 12px;
+    padding: 10px 11px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
@@ -744,37 +806,66 @@ a:hover {
         linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
 }
 
+.news-list-shell {
+    margin-top: 16px;
+}
+
+.news-plain-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.news-plain-list li {
+    margin-bottom: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.news-plain-list li:last-child {
+    margin-bottom: 0;
+}
+
+.news-list-date {
+    display: inline;
+    margin-right: 8px;
+    color: #f0c987;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
 .news-sidebar-item h3 {
-    font-size: 1.12rem;
-    line-height: 1.1;
-    margin-bottom: 8px;
+    font-size: 0.94rem;
+    line-height: 1.12;
+    margin-bottom: 6px;
 }
 
 .news-sidebar-item p {
     margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.82rem;
+    line-height: 1.38;
 }
 
 .news-topline {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 12px;
+    gap: 6px;
+    margin-bottom: 8px;
 }
 
 .news-chip {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 6px 10px;
+    padding: 5px 9px;
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.16);
     background: rgba(255, 255, 255, 0.06);
     color: #fff3df;
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     font-weight: 800;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
@@ -799,16 +890,17 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    margin-top: 8px;
+    margin-top: 6px;
     color: #fff;
     font-weight: 700;
+    font-size: 0.82rem;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
 
 .news-link::after {
     content: "->";
-    font-size: 0.95rem;
+    font-size: 0.82rem;
 }
 
 .news-link:hover {
@@ -995,6 +1087,20 @@ a:hover {
         color: #6e4618;
     }
 
+    .semester-bullets a {
+        color: #6c4314;
+    }
+
+    .semester-bullets a:hover {
+        color: #3c2a18;
+    }
+
+    .new-course-badge {
+        border-color: rgba(146, 102, 42, 0.2);
+        color: #2e1d11;
+        box-shadow: 0 0 14px rgba(180, 123, 47, 0.12);
+    }
+
     .chip,
     .badge,
     .journey-pill,
@@ -1079,6 +1185,10 @@ a:hover {
         background:
             linear-gradient(150deg, rgba(169, 242, 206, 0.2), rgba(167, 196, 255, 0.14) 40%, rgba(255, 255, 255, 0.7)),
             linear-gradient(145deg, rgba(255, 255, 255, 0.74), rgba(248, 240, 229, 0.72));
+    }
+
+    .news-list-date {
+        color: #8a571a;
     }
 
     .news-chip {
@@ -1167,6 +1277,7 @@ a:hover {
 
     .nav-links {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero,
