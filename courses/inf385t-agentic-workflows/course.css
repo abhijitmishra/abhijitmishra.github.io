@@ -118,6 +118,7 @@ h2 { font-size: clamp(2.4rem, 4vw, 4rem); line-height: 0.98; text-transform: upp
 .resources a { padding: 8px 11px; border: 1px solid rgba(121,214,154,0.38); border-radius: 8px; color: #dff7e7; font-size: 0.82rem; font-weight: 700; text-decoration: none; }
 .resources a::after { content: " ↓"; color: var(--green); }
 .resources a:hover { background: rgba(121,214,154,0.09); }
+.resources .none { padding: 8px 11px; border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); font-size: 0.82rem; font-weight: 700; }
 
 .closing { margin-top: 92px; padding: 64px 0 72px; text-align: center; border-top: 1px solid var(--line); }
 .closing h2 { margin-bottom: 28px; }
